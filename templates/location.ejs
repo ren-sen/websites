@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>Location</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div class="form">
+        <form action=/location method="post">
+            <div class="title">Choose!</div>
+            <br>
+            <label id="location">Location: </label>
+            <select id="names" name = "name">
+                <%- options %>
+            </select>
+            <br>
+            <div class="input-container ic2">
+                <input type="text" name="sun" id="sun" class="input">
+                <div class="cut"></div>
+                <label for="sun" class="placeholder">Sunset or Sunrise</label>
+            </div>
+            <input type="submit" value="Submit" class ="button">
+        </form>
+    </div>
+
+</body>
+</html>
